@@ -60,6 +60,52 @@ Note: This is not an exhaustive list of all Bash commands, but it covers some of
 --- 
 
 
+# Bash Keyboard Shortcut Cheat Sheet
+
+## Command Line Navigation
+
+| Shortcut | Description |
+|----------|-------------|
+| Ctrl + A | Move cursor to the beginning of the line |
+| Ctrl + E | Move cursor to the end of the line |
+| Ctrl + B | Move cursor one character back |
+| Ctrl + F | Move cursor one character forward |
+| Alt + B | Move cursor one word back |
+| Alt + F | Move cursor one word forward |
+| Ctrl + U | Delete from cursor position to the beginning of the line |
+| Ctrl + K | Delete from cursor position to the end of the line |
+| Ctrl + W | Delete the word before the cursor |
+| Ctrl + Y | Paste the last deleted text |
+
+## Command Line Editing
+
+| Shortcut | Description |
+|----------|-------------|
+| Ctrl + L | Clear the screen |
+| Ctrl + C | Interrupt current process |
+| Ctrl + D | Exit current shell or end input (EOF) |
+| Ctrl + R | Search command history |
+| Ctrl + G | Cancel current editing command |
+| Tab      | Auto-complete file or directory names |
+| Up Arrow | Move to previous command in history |
+| Down Arrow | Move to next command in history |
+| Ctrl + P | Move to previous command in history (alternative) |
+| Ctrl + N | Move to next command in history (alternative) |
+| Ctrl + Z | Suspend current process |
+| fg | Resume suspended process in foreground |
+| bg | Resume suspended process in background |
+| jobs | List background processes |
+
+## Command Line Control
+
+| Shortcut | Description |
+|----------|-------------|
+| Ctrl + D | Log out of current session (equivalent to `exit`) |
+| Ctrl + Alt + Del | Restart the system |
+| Ctrl + Alt + F1/F2/F3... | Switch to virtual terminal 1/2/3... |
+| Ctrl + Alt + F7 | Switch back to X window (if using virtual terminals) |
+| Ctrl + Alt + L | Lock the screen |
+
 
 
 
