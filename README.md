@@ -1,3 +1,5 @@
+![Banner Image](https://images.squarespace-cdn.com/content/v1/60479868292a5d29e69ac6b9/023f904a-d3ca-496c-9afb-9745b2d7b503/Basics+of+Video+Coding.gif?format=1000w)
+
 <h1 align='center'> Bash Command Cheatsheet</h3>
 
 [//]: # (Table of Content)
