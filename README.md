@@ -22,7 +22,7 @@
 ***
 
 
-## Navigation
+<!-- ## Navigation
 
 - `cd [directory]`: Change directory
 - `ls`: List files and directories
@@ -101,6 +101,85 @@
 > Note: This is not an exhaustive list of all Bash commands, but it covers some of the most commonly used ones. For more information and usage details, refer to the Bash documentation or individual command manuals using `man [command]` for comprehensive help.
 
 #### [Go to top:arrow_up: ](#top)
+--> 
+
+
+## Navigation
+
+- `cd [directory]`: Change directory to the specified path. For example, `cd /home/user/Documents` will take you to the Documents folder.
+- `ls`: List files and directories in the current directory.
+- `pwd`: Print the current working directory, showing the full path to your current location in the file system.
+
+#### [Go to top:arrow_up: ](#top)
+
+## File Operations
+
+- `touch [filename]`: Create an empty file with the specified name. For example, `touch newfile.txt` will create a new, empty file called "newfile.txt".
+- `cp [source] [destination]`: Copy a file or directory from the source location to the destination. For example, `cp file.txt /home/user/Documents/` will copy "file.txt" to the "Documents" folder.
+- `mv [source] [destination]`: Move or rename a file or directory. For example, `mv file.txt file2.txt` will rename "file.txt" to "file2.txt", and `mv file.txt /home/user/Documents/` will move "file.txt" to the "Documents" folder.
+- `rm [filename]`: Remove a file with the specified name. For example, `rm file.txt` will delete "file.txt".
+- `mkdir [directory]`: Create a new directory with the specified name. For example, `mkdir new_folder` will create a new folder called "new_folder".
+- `rmdir [directory]`: Remove an empty directory with the specified name. For example, `rmdir empty_folder` will delete the empty folder called "empty_folder".
+- `rm -r [directory]`: Remove a directory and its contents recursively. For example, `rm -r folder_to_delete` will delete the folder "folder_to_delete" and all of its contents.
+- `cat [filename]`: Display the contents of a file in the terminal. For example, `cat file.txt` will print the contents of the "file.txt" file to the terminal.
+- `head [filename]`: Display the first few lines of a file in the terminal. For example, `head file.txt` will print the first 10 lines of "file.txt".
+- `tail [filename]`: Display the last few lines of a file in the terminal. For example, `tail file.txt` will print the last 10 lines of "file.txt".
+
+#### [Go to top:arrow_up: ](#top)
+
+## File Permissions
+
+- `chmod [permissions] [filename]`: Change the permissions of a file or directory according to the specified permissions. For example, `chmod 755 file.txt` will set the owner as having full permissions, and all other users as having read and execute-only permissions.
+- `chown [owner:group] [filename]`: Change the owner and/or group associated with a file or directory. For example, `chown user:group file.txt` will change the owner of "file.txt" to "user" and the group to "group".
+
+#### [Go to top:arrow_up: ](#top)
+
+## Process Management
+
+- `ps`: Display a list of currently running processes. For example, `ps -ef` will show all running processes with detailed information.
+- `kill [process_ID]`: Terminate a process with the specified process ID (PID). For example, `kill 1234` will terminate the process with PID 1234.
+- `bg`: Send a currently stopped process to the background, allowing it to continue running while you continue to use the terminal. For example, `bg` will send the last stopped job to the background.
+- `fg`: Bring a background process to the foreground, allowing you to interact with it directly in the terminal. For example, `fg` will bring the most recently backgrounded process to the foreground.
+- `jobs`: Display a list of currently running or stopped background jobs. For example, `jobs` will show all background jobs.
+
+#### [Go to top:arrow_up: ](#top)
+
+## Text Manipulation
+
+- `grep [pattern] [filename]`: Search for a specified pattern in a file, and display all matching lines. For example, `grep "error" file.txt` will search "file.txt" for any lines containing the word "error".
+- `sed [command] [filename]`: Stream editor for filtering and transforming text with a specified command. For example, `sed 's/hello/goodbye/' file.txt` will replace all instances of "hello" with "goodbye" in "file.txt".
+- `awk [pattern] [filename]`: Text processing tool for pattern matching and data manipulation. For example, `awk '{print $1}' file.csv` will print the first column of data (separated by commas) in the "file.csv" file.
+
+#### [Go to top:arrow_up: ](#top)
+
+## System Information
+
+- `uname`: Print system information, including the name and version of the operating system. For example, `uname -a` will show detailed information about the system.
+- `df`: Display disk space usage for all file systems. For example, `df -h` will show usage in a human-readable format.
+- `free`: Display memory usage statistics for the system. For example, `free -m` will show memory usage in megabytes.
+- `top`: Display real-time system statistics, including CPU usage and memory usage. For example, `top -o cpu` will show processes sorted by CPU usage.
+- `history`: View command history of previous commands entered in the terminal. For example, `history | grep "command"` will show all previous commands containing the string "command".
+
+#### [Go to top:arrow_up: ](#top)
+
+## Network
+
+- `ping [hostname/IP]`: Test network connectivity to a host or IP address by sending packets and measuring the response time. For example, `ping google.com` will test connectivity to the Google website.
+- `nslookup [hostname]`: Look up the IP address of a domain name by querying a DNS server. For example, `nslookup google.com` will show the IP address associated with the Google domain name.
+- `ifconfig`: Display network interface configuration for all active interfaces. For example, `ifconfig -a` will show information about all active network interfaces.
+- `netstat`: Display network connections and listening ports, as well as related information such as routing tables. For example, `netstat -an` will show all active network connections and listening ports.
+
+#### [Go to top:arrow_up: ](#top)
+
+## Miscellaneous
+
+- `echo [text]`: Print the specified text to the terminal. For example, `echo "Hello, World!"` will print "Hello, World!".
+- `date`: Display the current date and time in the terminal. For example, `date +"%A, %B %d, %Y"` will show the date in a custom format.
+- `whoami`: Print the current user name to the terminal. For example, `whoami` will display the currently logged in user.
+- `sudo [command]`: Execute a command with superuser (root) privileges. For example, `sudo apt-get update` will update the system using sudo privileges.
+- `man [command]`: Display the manual page for a specified command, providing detailed usage and examples. For example, `man ls` will show the manual page for the "ls" command.
+- `! [command_number]`: Execute a command from the command history by specifying its command number. For example, `!5` will execute the fifth command from the command history.
+
 
 ---
 
